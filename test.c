@@ -1,106 +1,125 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <locale.h>
-#include <stdbool.h>
+// Aula 1
+// algoritimo sequencia de passo finito e nao ambiguo
+// linguagem C nao depende de um hardware especifico
+// combina vantagem de linguagem de alto nivel com eficiencia de linguagem de maquina
+// Integrated Develop Environments (IDEs)
+// phyton java linguagens interpretadas
+// C linguagem compilada
+// codigo-fonte -> compilador -> programa-objeto -> bibliotecas-linkeditor -> programa-executavel
+// #include <stdio.h>
+// int main(){
+//     printf("Hello, word"); 
+//     return 0;   
+// }
+// stdio essa biblioteca de interação com usuario
 
-//Registro
-struct Consulta
-{
-    char nome[100];
-    int dia;
-    int hora;
-};
 
-//Variaveis Globais
-struct Consulta agenda[300];
-int qtdAgendamento;
 
-bool verificarDisponibilidade(int diaAgendamento, int horaAgenda){
 
-    if(horaAgenda < 8 || horaAgenda > 20){
-        printf("Clínica fechada neste horário\n");
-        return false;
-    }
-    return true;
-}
 
-void agendarConsulta(){
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <locale.h>
+// #include <stdbool.h>
 
-    int diaAgenda;
-    printf("Qual dia do mês você quer agendar?\n");
-    fflush(stdin);
-    scanf("%d", &diaAgenda);
+// //Registro
+// struct Consulta
+// {
+//     char nome[100];
+//     int dia;
+//     int hora;
+// };
 
-    int horaAgenda;
-    printf("Qual hora do dia você quer agendar?\n");
-    fflush(stdin);
-    scanf("%d", &horaAgenda);
+// //Variaveis Globais
+// struct Consulta agenda[300];
+// int qtdAgendamento;
 
-    bool verfificador = verificarDisponibilidade(diaAgenda,horaAgenda);
-    if(verfificador){
-        printf("horário disponivel\n");
-        printf("Vamos confirmar seu agendamento\n");
-        agenda[qtdAgendamento].dia = diaAgenda;
-        agenda[qtdAgendamento].hora = horaAgenda;
-        printf("Qual seu nome?\n");
-        fflush(stdin);
-        gets(agenda[qtdAgendamento].nome);
-        qtdAgendamento++;
-        printf("Agendamento realizado!\n");
-    }
-    else {
+// bool verificarDisponibilidade(int diaAgendamento, int horaAgenda){
 
-        printf("horário não disponivel\n");
-    }
-}
+//     if(horaAgenda < 8 || horaAgenda > 20){
+//         printf("Clínica fechada neste horário\n");
+//         return false;
+//     }
+//     return true;
+// }
 
-void listaConsulta(){
-    int i;
-    for ( i = 0; i < qtdAgendamento; i++)
-    {
-        printf("======================\n");
-        printf("Nome: %s\n", agenda[i].nome);
-        printf("Dia: %d\n",agenda[i].dia);
-        printf("Hora: %d\n",agenda[i].hora);
-    }
+// void agendarConsulta(){
+
+//     int diaAgenda;
+//     printf("Qual dia do mês você quer agendar?\n");
+//     fflush(stdin);
+//     scanf("%d", &diaAgenda);
+
+//     int horaAgenda;
+//     printf("Qual hora do dia você quer agendar?\n");
+//     fflush(stdin);
+//     scanf("%d", &horaAgenda);
+
+//     bool verfificador = verificarDisponibilidade(diaAgenda,horaAgenda);
+//     if(verfificador){
+//         printf("horário disponivel\n");
+//         printf("Vamos confirmar seu agendamento\n");
+//         agenda[qtdAgendamento].dia = diaAgenda;
+//         agenda[qtdAgendamento].hora = horaAgenda;
+//         printf("Qual seu nome?\n");
+//         fflush(stdin);
+//         gets(agenda[qtdAgendamento].nome);
+//         qtdAgendamento++;
+//         printf("Agendamento realizado!\n");
+//     }
+//     else {
+
+//         printf("horário não disponivel\n");
+//     }
+// }
+
+// void listaConsulta(){
+//     int i;
+//     for ( i = 0; i < qtdAgendamento; i++)
+//     {
+//         printf("======================\n");
+//         printf("Nome: %s\n", agenda[i].nome);
+//         printf("Dia: %d\n",agenda[i].dia);
+//         printf("Hora: %d\n",agenda[i].hora);
+//     }
     
-}
+// }
 
-void main() {
+// void main() {
 
-    setlocale(LC_ALL, "");
-    int opcao;
-    qtdAgendamento = 0;
+//     setlocale(LC_ALL, "");
+//     int opcao;
+//     qtdAgendamento = 0;
 
-    do{
-        printf("Digite um opcão desejada?\n");
-        printf("1 - Agendar\n");
-        printf("2 - Listar\n");
-        printf("3 - Sair\n");
-        fflush(stdin);
-        scanf("%d", &opcao);
+//     do{
+//         printf("Digite um opcão desejada?\n");
+//         printf("1 - Agendar\n");
+//         printf("2 - Listar\n");
+//         printf("3 - Sair\n");
+//         fflush(stdin);
+//         scanf("%d", &opcao);
 
-        switch (opcao)
-        {
-        case 1:
-            agendarConsulta();
-            break;
+//         switch (opcao)
+//         {
+//         case 1:
+//             agendarConsulta();
+//             break;
         
-        case 2:
-            listaConsulta();
-            break;
+//         case 2:
+//             listaConsulta();
+//             break;
 
-        case 3:
-            printf("Saindo do programa...\n");;
-            break;
+//         case 3:
+//             printf("Saindo do programa...\n");;
+//             break;
         
-        default:
-            printf("Opção inválida\n");
-            break;
-        }
+//         default:
+//             printf("Opção inválida\n");
+//             break;
+//         }
 
-    }while (opcao !=3);   
-}
+//     }while (opcao !=3);   
+// }
 
 
 
