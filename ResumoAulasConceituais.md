@@ -62,3 +62,22 @@ Operadores aritméticos
 Operadores relacionais
 == <= >= != || && !
 if(A < 10 && A > 0)
+
+Aula 5
+
+Funções intrínsecas
+É preciso identificar a qual biblioteca essa função pertence.
+
+exemplo de função intrínsecas:
+ceil(x), abs(x), pow(x)...
+printf("Texto");
+scanf("%d",&num);
+
+bibliotecas basicas 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(){
+    float A = 4, resultado;
+    resultado = sqrt(A);
+}
