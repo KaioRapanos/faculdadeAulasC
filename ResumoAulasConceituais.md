@@ -55,4 +55,10 @@ para se declarar uma constante usa-se
 #define PI 3.1416
 #define MSG-ERRO "Erro"
 
+Aula 4
 
+Operadores aritméticos
++ - / *
+Operadores relacionais
+== <= >= != || && !
+if(A < 10 && A > 0)
