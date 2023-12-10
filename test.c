@@ -333,39 +333,6 @@
 
 
 
-// #include <stdio.h>
 
-// int main(){
-//     int i;
-//     for ( i = 0; i <= 100; (i=i+2))
-//     {
-//         printf("%d\n",i);
-//     }
-//     i = 5;
-//     i++;
-//     printf("%i\n",i);
 
-//     int j, N = 3, res;
-//     for(j = 1; j <= 10; j++){
-//         res = N * j;
-//         printf("%d x %d = %d\n", j, N, res);
-//     }
-// #include <stdio.h>
- 
-// int fat(int n){
-//     if(n == 1)
-//         return 1;
-//     else
-//         return n * fat(n-1);
-// }
- 
-// int main()
-// {
-//     int num, res;
-//     printf ("Informe o número:\n");
-//     scanf ("%d", &num);
-//     res = fat(num);
-//     printf ("O fatorial é: %d\n", res);
-//     return (0);
-// }
 
