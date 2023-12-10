@@ -1,4 +1,4 @@
-Aula 1
+<p>Aula 1
 algoritimo sequencia de passo finito e nao ambiguo
 linguagem C nao depende de um hardware especifico
 combina vantagem de linguagem de alto nivel com eficiencia de linguagem de maquina
@@ -12,7 +12,7 @@ int main(){
      return 0;   
 }
 stdio essa biblioteca de interação com usuario
-
+</p>
 Aula 2
 
 Sintaxe e a extrutura da linguagem
@@ -38,3 +38,21 @@ unsigned float
 
 palavras reservadas, exemplos: int float double, 
 if else do while, typedef, struct, union
+
+Aula 3
+
+variaveis são espaços em memoria 
+um tipo e um identificador
+<Tipo><Identificador>
+
+float salario;
+int idade, ano;
+char nome[20];
+bool brasileiro;
+
+para se declarar uma constante usa-se
+#define <identidicador><valor>
+#define PI 3.1416
+#define MSG-ERRO "Erro"
+
+
