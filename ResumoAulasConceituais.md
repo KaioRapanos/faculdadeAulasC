@@ -81,3 +81,30 @@ int main(){
     float A = 4, resultado;
     resultado = sqrt(A);
 }
+
+Aula 6
+
+Entrada de dados
+leitura scanf("<tipo_variavel>",&<variável>);
+escrita printf("texto <tipo_variavel>",<variável>);
+
+especidicadores de formato comando interno de uma string
+
+"%d" int
+"%f" float
+"%e" double
+"%c" char
+"%s" vetor de char
+
+\n quebra de linha
+\0 fim de uma string
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int idade;
+    printf("Digite a idade:\n");
+    scanf("%d",&idade);
+    printf("A idade digitada foi = %d", idade);
+}
