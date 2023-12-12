@@ -108,3 +108,42 @@ int main(){
     scanf("%d",&idade);
     printf("A idade digitada foi = %d", idade);
 }
+
+Aula 7 e 8
+
+estruturas condicionais ou de decisão
+
+if(<exprssão lógica>){
+    <bloco de comandos>
+}
+
+comando que definem outro bloco de comando não usao o ponto e virgula ;
+
+contrução do programa
+
+#include <stdin.h>
+#include <stdlib.h>
+
+int main(){
+    int num;
+    printf("Digite um numero: \n");
+    scanf("%d",&num);
+    if(num > 10){
+        printf("O numero digitado %d é maior que 10",num);
+    }
+}
+
+exemplo:
+
+#include <stdin.h>
+#include <stdlib.h>
+
+int main(){
+    float num;
+    printf("Digite um numero: \n");
+    scanf("%f",&num);
+    if(num > 10 && num < 20){
+        printf("O numero digitado %d é maior que 10 e menor que 20",num);
+    }
+}
+
