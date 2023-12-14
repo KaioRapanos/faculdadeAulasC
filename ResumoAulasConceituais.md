@@ -195,4 +195,39 @@ int main(){
     }
 }
 
+Aula 12 e 13 e 14
+
+for repete um bloco de comando por um numero finito de vezes
+
+inicialização exemplo x = 10;
+teste expressão logico relacional
+incremento para que em algum momento o teste condicional se quebre.
+e saia do laço de repetição
+
+exemplo:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int i;
+    for( i=0 ; 1<100 ; i++>){
+        printf("Aguarde...\n");
+    }
+}
+
+laço while faz a repetição por condição
+assim que a condição e quebrada ele sai da condição;
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int i=0; /*necessita ser inicializada */
+    while(i<100){
+        printf("Aguarde...\n");
+        i=i+1;
+    }
+}
+
 
