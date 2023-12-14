@@ -167,3 +167,32 @@ int main(){
         printf("Ímpar!");
     }
 }
+
+Aula 10 e 11
+
+extruturas condicionais aninhadas
+
+simples = if
+composta = if else
+múltiplas = switch case
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int num;
+    printf("Digite um numero: \n");
+    scanf("%d",&num);
+    switch(num){
+        case 1: printf("Domingo..\n");
+            break;
+        case 2: printf("Segunda..\n");
+            break;
+        case 3: printf("Terça..\n");
+            break;
+        default : printf("numero invalido..\n");
+            break;
+    }
+}
+
+
